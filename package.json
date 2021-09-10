@@ -1,0 +1,19 @@
+{
+  "name": "simple-node-app",
+  "version": "1.0.0",
+  "description": "Simple node app for AGC GitHub actions class",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-clintel:clintel-1100/simple-node-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.1.1"
+  }
+}
