@@ -12,10 +12,7 @@ jobs:
       matrix:
         node: [12]
         os: [macos-latest, windows-latest, ubuntu-18.04]
-        include:
-          - node: 13
-            os: ubuntu-18.04
-            experimental: true
+        
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node }}
