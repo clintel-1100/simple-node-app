@@ -1,8 +1,7 @@
 name: build
 on:
-  push:
-    paths:
-      - '**.js'
+  push
+    
 jobs:
   build:
     name: the job
@@ -16,12 +15,23 @@ jobs:
             node: 10
     
     steps:
-      - uses: actions/checkout@v2
-      - name: Use node.js ${{ matrix.node }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
-    
+      - name: my first step
+        env:
+          MY_VAR: Hello there! My name is
+          FIRST_NAME: James
+          MIDDLE_NAME: T
+          LAST_NAME: Kirk
+        run:
+          echo $MAR_VAR
+          echo $FIRST_NAME
+          echo $MIDDLE_NAME
+          echo $LAST_NAME
+          
+          
+      
+        
+        
+      
           
         
 
