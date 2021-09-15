@@ -22,10 +22,7 @@ jobs:
           MIDDLE_NAME: T
           LAST_NAME: Kirk
         run:
-          echo $MAR_VAR
-          $FIRST_NAME
-          $MIDDLE_NAME
-          $LAST_NAME
+          echo $MAR_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME
           
           
       
